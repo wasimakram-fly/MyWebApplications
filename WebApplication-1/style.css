@@ -50,12 +50,12 @@ a{
 .topbanner-text{
     font-size: 2rem;
     font-weight: 700;
-    color: rgb(235, 90, 6);
+    color: rgb(255, 255, 255);
     padding: 5px 5px;
 }
 .container{
      max-width: 1180px;
-     margin-inline: auto; /*--margin-inline is use for right & left margin one time 'auto' for arrange it center*/
+     margin-inline: auto; /*--'margin-inline' is use for right & left margin one time, 'auto' for arrange it center*/
      padding: 20px;
      text-align:center;
 }
@@ -81,9 +81,12 @@ ul{
 
 /*---top banner--*/
 .top-banner{
-    background-image: url(./assets/Images/header-banner.jpg);
-    background-size: 400px;
+   
+    /*-image: linear-gradient() url(./assets/Images/header-banner.jpg);*/
+    /*background-size: 400px;*/
+    background-image: radial-gradient(circle, rgb(81, 197, 3),rgb(234, 242, 223),rgba(244, 84, 4, 0.926));
 }
+
 /* nav bar */
 .main-nav{
     justify-content: space-between;
@@ -139,6 +142,10 @@ ul{
 .div-image-left-sub-div{
     padding-right: 10px;
     padding-top: 40px;
+}
+
+button:hover{
+    opacity: 80%;
 }
 .div-image-left-sub-div button{
     background-color: rgba(255, 0, 0, 0.846);
