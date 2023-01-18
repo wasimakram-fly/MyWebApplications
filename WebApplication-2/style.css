@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
 /*--- presets -------*/
 *{
     margin: 0;
@@ -20,7 +20,7 @@ body{
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 h2 {
@@ -35,12 +35,16 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
     color: var(--secondary-text-color);
-    line-height: 1.8rem;
+    line-height: 2rem;
 }
 
 a{
     text-decoration: none;
     display: inline-block;
+}
+
+ul {
+    list-style: none;
 }
 
 /* utility classes*/
@@ -56,13 +60,120 @@ a{
     padding-inline: var(--padding-inline-section);
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    font-weight: 500;
+    color: white !important; /* use '!important' if we define this same property before */
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color); /* x-direction y-direction 2px-blur color-shadow color */
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button {
+    border: 1px solid #b9cde4;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: var(--primary-text-color) !important;
+    transition: 0.2s ease-out;
+}
+
+.secondary-button:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+
+}
+
+/* top banner */
 .top-banner{
-    background-image: url('.');
+    background-image: url('./assets/asset\ 32.png');
     background-color: #4fb3d4;
+    background-size: 300px;
 }
 
 .banner-text{
     color: white;
     padding: 15px 30px;
     text-align: center;
+}
+
+/* nav bar */
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.company-logo img{
+    width: 200px;
+}
+
+.nav-links {
+    flex-basis: 730px; /* fix width */
+}
+.nav-links ul {
+    justify-content: end; /* for fixing right side */
+    gap: 40px;
+}
+
+/* header section */
+
+.header {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-right img {
+    padding-top: 40px;
+    width: 600px;
+}
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-left h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 570;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.get-started-button {
+    margin-top: 20px;
+}
+
+/* companies section*/
+
+.companies-header {
+    text-align: center;
+    margin-block: 30px;
+    color: var(--primary-text-color);
+
+}
+
+.logo {
+   
 }
